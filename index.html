@@ -5,7 +5,7 @@
         <meta name="description" content="A simple introduction to HTML"/>
         <meta name="author" content="width=device-width, initial-scale=1.0"/>
         <title>Document</title>
-                <script></script>
+
                 <style>
                     html {
                         height: 100%;
@@ -19,6 +19,17 @@
                         min-height: 100%;
                         display: flex;
                         flex-flow: row wrap;
+                        color: rgb(110, 108, 108);
+                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+                    p {
+                        padding: 10px;
+                    }
+                    code {
+                        padding: 10px;
+                    }
+                    li {
+                        padding: 10px;
                     }
 
                     main {
@@ -26,11 +37,12 @@
                         flex-direction: column;
                         width: calc(100% - 250px);
                         padding: 20px;
+                        padding-left: 22%;
                     }
                     
-                    aside   { flex: 1 250px; background: hotpink; }
-                    section { flex: 4; background: deepskyblue; }
-                    footer  { flex: 1; background: lightgreen; }
+                    aside   { flex: 1 250px; background: lightgrey; }
+                    section { flex: 4;}
+                    footer  { flex: 1;}
 
                     @media screen and ( max-width: 500px) {
                      body { flex-direction: column; }
@@ -41,6 +53,7 @@
 
                     header {
                         font-size: xx-large;
+                        color: black;
                     }
                     nav {
                         display: grid;
@@ -49,28 +62,45 @@
                     .navlink {
                         text-decoration: none;
                         font-size: x-large;
+                        color: rgb(110, 108, 108);
+                        padding-top: 10px;
                     }
-
+                    aside > header {
+                        background-color:  rgb(110, 108, 108);
+                        color: white;
+                        padding-left: .1em;
+                        border-radius: 5px;   
+                        text-align: center; 
+                    }
+                    .scroll {
+                    overflow: auto;
+                    height: 100%;
+                    width: 20%;
+                    display: block;
+                    position: fixed;
+                    }  
+                    
                 </style>
     </head>
 <body> 
-    <aside>
+    <aside class="scroll">
+        <header>JavaScript Documentation</header><br>
         <nav id="navbar">
-            <header>JS Documentation</header>
-            <a href="#Introduction" class="navlink">Introduction</a><br>
-            <a href="#What_you_should_already_know" class="navlink">What you should already know</a><br>
-            <a href="#JavaScript_and_Java" class="navlink">JavaScript and Java</a><br>
-            <a href="#Hello_World" class="navlink">Hello World</a><br>
-            <a href="#Variables" class="navlink">Variables</a><br>
-            <a href="#Declaring_variables" class="navlink">Declaring variables</a><br>
-            <a href="#Varialbe_scope" class="navlink">Variable scope</a><br>
-            <a href="#Global_variables" class="navlink">Global variables</a><br>
-            <a href="#Constants" class="navlink">Constants</a><br>
-            <a href="#Data_types" class="navlink">Data types</a><br>
-            <a href="#if..._else_statement" class="navlink">if... else statement</a><br>
-            <a href="#while_statement" class="navlink">while statement</a><br>
-            <a href="#Function_declarations" class="navlink">Function declarations</a><br>
-            <a href="#Reference" class="navlink">Reference</a><br>
+                <a href="#Introduction" class="navlink">Introduction</a><br>
+                <a href="#What_you_should_already_know" class="navlink">What you should already know</a><br>
+                <a href="#JavaScript_and_Java" class="navlink">JavaScript and Java</a><br>
+                <a href="#Hello_World" class="navlink">Hello World</a><br>
+                <a href="#Variables" class="navlink">Variables</a><br>
+                <a href="#Declaring_variables" class="navlink">Declaring variables</a><br>
+                <a href="#Varialbe_scope" class="navlink">Variable scope</a><br>
+                <a href="#Global_variables" class="navlink">Global variables</a><br>
+                <a href="#Constants" class="navlink">Constants</a><br>
+                <a href="#Data_types" class="navlink">Data types</a><br>
+                <a href="#if..._else_statement" class="navlink">if... else statement</a><br>
+                <a href="#while_statement" class="navlink">while statement</a><br>
+                <a href="#Function_declarations" class="navlink">Function declarations</a><br>
+                <a href="#Reference" class="navlink">Reference</a><br>
+            
         </nav>
     </aside>
     <main id="main-doc">
@@ -393,6 +423,9 @@
         </footer>
     </main>
 </body>
+<script>
+
+</script>
 </html>
 
 <!-- 
@@ -410,8 +443,6 @@ of each header contained within it. Any spaces should be replaced with underscor
  "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
 
 XXXUser Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
 
 User Story #7: The .main-section elements should contain at least 5 li items total (not each).
 
