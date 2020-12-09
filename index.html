@@ -84,15 +84,16 @@
     </head>
 <body> 
     <aside class="scroll">
-        <header>JavaScript Documentation</header><br>
+        
         <nav id="navbar">
+            <header>JavaScript Documentation</header><br>
                 <a href="#Introduction" class="navlink">Introduction</a><br>
                 <a href="#What_you_should_already_know" class="navlink">What you should already know</a><br>
                 <a href="#JavaScript_and_Java" class="navlink">JavaScript and Java</a><br>
                 <a href="#Hello_World" class="navlink">Hello World</a><br>
                 <a href="#Variables" class="navlink">Variables</a><br>
                 <a href="#Declaring_variables" class="navlink">Declaring variables</a><br>
-                <a href="#Varialbe_scope" class="navlink">Variable scope</a><br>
+                <a href="#Variable_scope" class="navlink">Variable scope</a><br>
                 <a href="#Global_variables" class="navlink">Global variables</a><br>
                 <a href="#Constants" class="navlink">Constants</a><br>
                 <a href="#Data_types" class="navlink">Data types</a><br>
@@ -104,8 +105,8 @@
         </nav>
     </aside>
     <main id="main-doc">
-        <section class="main-section">
-            <header id="Introduction">Introduction</header>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
                 <p>
                     JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
                     Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
@@ -128,8 +129,8 @@
                         another of the application, or perform file manipulations on a server.</li>
                 </ul>
         </section>
-        <section class="main-section">
-            <header id="What_you_should_already_know">What you should already know</header>
+        <section class="main-section" id="What_you_should_already_know">
+            <header >What you should already know</header>
                 <p>This guide assumes you have the following basic background:</p>
                 <ul>
                     <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
@@ -138,8 +139,8 @@
                         try one of the tutorials linked on the main page about JavaScript.</li>
                 </ul>
         </section>
-        <section class="main-section">
-            <header id="JavaScript_and_Java">JavaScript and Java</header>
+        <section class="main-section" id="JavaScript_and_Java">
+            <header >JavaScript and Java</header>
                 <p>JavaScript and Java are similar in some ways but fundamentally different in some others. 
                     The JavaScript language resembles Java but does not have Java's static typing and strong 
                     type checking. JavaScript follows most Java expression syntax, naming conventions and 
@@ -159,8 +160,8 @@
                     methods are public, private, or protected, and you do not have to implement interfaces. 
                     Variables, parameters, and function return types are not explicitly typed.</p>
         </section>
-        <section class="main-section">
-            <header id="Hello_World">Hello World</header>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first 
                     "Hello world" JavaScript code:<br>
 
@@ -170,8 +171,8 @@
 
                 <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
         </section>
-        <section class="main-section">
-            <header id="Variables">Variables</header>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
                 <p>You use variables as symbolic names for values in your application. The names of 
                     variables, called identifiers, conform to certain rules.</p>
 
@@ -184,8 +185,8 @@
                     You can also use the Unicode escape sequences as characters in identifiers. 
                     Some examples of legal names are Number_hits, temp99, and _name.</p>
         </section>
-        <section class="main-section">
-            <header id="Declaring_variables">Declaring variables</header>
+        <section class="main-section"  id="Declaring_variables">
+            <header>Declaring variables</header>
                 <p>
                     You can declare a variable in three ways:
                 </p>
@@ -204,8 +205,8 @@
                         This syntax can be used to declare a block scope local variable. See Variable scope below.</li>
                 </ul>
         </section>
-        <section class="main-section">
-            <header id="Variable_scope">Variable scope</header>
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
                 <p>When you declare a variable outside of any function, it is called a global variable, 
                     because it is available to any other code in the current document. When you declare 
                     a variable within a function, it is called a local variable, because it is available 
@@ -226,8 +227,8 @@
                     defined</code>
                 </p>    
         </section>
-        <section class="main-section">
-            <header id="Global_variables">Global variables</header>
+        <section class="main-section" id="Global_variables">
+            <header>Global variables</header>
                 <p>Global variables are in fact properties of the global object. In web pages the global 
                     object is window, so you can set and access global variables using the window.variable 
                     syntax.</p>
@@ -236,8 +237,8 @@
                     phoneNumber is declared in a document, you can refer to this variable from an iframe as 
                     parent.phoneNumber.</p>
         </section>
-        <section class="main-section">
-            <header id="Constants">Constants</header>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
                 <p>
                     You can create a read-only, named constant with the const keyword. The syntax of a constant 
                     identifier is the same as for a variable identifier: it must start with a letter, 
@@ -270,8 +271,8 @@
                     </code>
                 </p>    
         </section>
-        <section class="main-section">
-            <header id="Data_types">Data types</header>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
                 <p>
                     The latest ECMAScript standard defines seven data types:
                 </p>
@@ -296,8 +297,8 @@
                     application can perform.
                 </p>
         </section>
-        <section class="main-section">
-            <header id="if..._else_statement">if... else statement</header>
+        <section class="main-section" id="if..._else_statement">
+            <header>if... else statement</header>
                 <p>
                     Use the if statement to execute a statement if a logical condition is true. Use the optional else 
                     clause to execute a statement if the condition is false. An if statement looks as follows:<br>
@@ -346,8 +347,8 @@
                 </p>
 
         </section>
-        <section class="main-section">
-            <header id="while_statement">while statement</header>
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
                 <p>
                     A while statement executes its statements as long as a specified condition evaluates to true. 
                     A while statement looks as follows:<br>
@@ -380,8 +381,8 @@
                     After completing the third pass, the condition n &lt; 3 is no longer true, so the loop terminates.
                 </p>
         </section>
-        <section class="main-section">
-            <header id="Function_declarations">Function declarations</header>
+        <section class="main-section" id="Function_declarations">
+            <header>Function declarations</header>
                 <p>A function definition (also called a function declaration, or function statement) consists of the 
                     function keyword, followed by:
                     <ul>
@@ -409,8 +410,8 @@
                     globally or in the calling function.
                 </p>
         </section>
-        <section class="main-section">
-            <header id="Reference">Reference</header>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
                 <p>
                     <ul>
                         <li>All the documentation in this page is taken from 
@@ -427,44 +428,3 @@
 
 </script>
 </html>
-
-<!-- 
-XXXUser Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content 
-(technical documentation).
-
-XXXUser Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. 
-There should be a minimum of 5.
-
-XXXUser Story #3: The first element within each .main-section should be a header element which contains text that describes
- the topic of that section.
-
-XXXUser Story #4: Each section element with the class of main-section should also have an id that corresponds with the text 
-of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header
- "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-XXXUser Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-XXXUser Story #8: I can see a nav element with a corresponding id="navbar".
-
-XXXUser Story #9: The navbar element should contain one header element which contains text that describes
- the topic of the technical documentation.
-
-XXXUser Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. 
-There should be one for every element with the class main-section.
-
-User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-XXXUser Story #12: Each element with the class of nav-link should contain text that corresponds to the header 
-text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element 
-which contains the text "Hello world").
-
-XXXUser Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the 
-main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", 
-the page navigates to a section element that has that id and contains the corresponding header.
-
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" 
-should be shown on the left side of the screen and should always be visible to the user.
-
-User Story #15: My Technical Documentation page should use at least one media query.-->
